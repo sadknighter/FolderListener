@@ -1,13 +1,15 @@
 # FolderListener
-Служба, которая слушает изменения в папке и выводит их на экран.
+It is a Windows Console Service (based on Topshelf https://github.com/Topshelf/Topshelf) that listens to changes in the folder and showing changes on the screen. It can helps logging changes in some windows-folder.
+Also, you can use it as an example of working with FileSystemEventHandler class and how to host the .net service with TopShelf.
 ___
-Параметры службы задаются в App.config.
-Это секция для типов файлов FileRules и Секция для списка папок для прослушивания Folders. 
+Service parameters set in App.config file:
+* FileRules config section used for setting parameters of file types for listening changes. 
+* Folders config section used for setlist of folders for listening. 
 ___
-DefaultRule содержит destination Для перемещения файлов, которые подошли под текущие настройки в секции FileRules.
+DefaultRule tag contains destination settings for moving files.
 ___
 
-Пример настроек:
+Example of FolderListener settings(code bit from App.Config):
 ```
 <FileWatcherSettings>
     <Folders>
