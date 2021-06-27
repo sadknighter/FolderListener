@@ -1,5 +1,5 @@
 # FolderListener
-It is a Windows Console Service (based on Topshelf https://github.com/Topshelf/Topshelf) that listens to changes in the folder and showing changes on the screen. It can helps logging changes in some windows-folder.
+It is the Windows Console Service (based on Topshelf https://github.com/Topshelf/Topshelf) that listens to changes in the folder and showing changes on the screen. It can helps logging changes in some windows-folder.
 Also, you can use it as an example of working with FileSystemEventHandler class and how to host the .net service with TopShelf.
 ___
 Service parameters set in App.config file:
